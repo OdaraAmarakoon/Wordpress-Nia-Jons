@@ -119,8 +119,29 @@
     </section>
 <?php endif; ?>
 
+<!-- location Section -->
+<?php if (get_field('contact_content')) : ?>
+    <section class="contact-section" id="welcome">
+        <div class="contact-bground">
+        <?php getImage(get_field('contatct_us_image'), 'full-image'); ?>
+        </div>
+   
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="content-wrapper">
+                        <?php the_field('contact_content'); ?>
 
-
+                        <div class="link-btn">
+                            <a href="#"><?php getImage(get_field('arrow_contact')); ?><?php the_field('contact_link'); ?></a>
+                        </div>
+                    </div>
+                    
+                </div>           
+            </div>
+        </div>
+    </section>
+<?php endif; ?>
 
 
 
