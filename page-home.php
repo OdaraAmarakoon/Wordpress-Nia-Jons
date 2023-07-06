@@ -120,31 +120,54 @@
 <?php endif; ?>
 
 <!-- location Section -->
-<?php if (get_field('contact_content')) : ?>
-    <section class="contact-section" id="welcome">
-        <div class="contact-bground">
-        <?php getImage(get_field('contatct_us_image'), 'full-image'); ?>
-        </div>
-   
+<?php if (get_field('location_title')) : ?>
+    <section class="loction-section" id="welcome">
+        <?php the_field('location_title'); ?>
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <div class="content-wrapper">
-                        <?php the_field('contact_content'); ?>
-
-                        <div class="link-btn">
-                            <a href="#"><?php getImage(get_field('arrow_contact')); ?><?php the_field('contact_link'); ?></a>
+                    <div class="contact-bground">
+                        <div><?php getImage(get_field('image_1')); ?></div>
+                        <div class="content-wrapper">
+                            <div class="location"><?php the_field('image_1_location'); ?></div>
+                            <div class="link-btn">
+                                <a href="#"><?php getImage(get_field('location_arrow')); ?><?php the_field('contact_link'); ?></a>
+                            </div>
                         </div>
-                    </div>
-                    
+                    </div>    
+                </div>           
+                <div class="col-lg-6">
+                    <div class="contact-bground">
+                        <div><?php getImage(get_field('image_2')); ?></div>
+                        <div class="content-wrapper">
+                        <?php the_field('image_2_location'); ?>
+                            <div class="link-btn">
+                                <a href="#"><?php getImage(get_field('location_arrow')); ?><?php the_field('contact_link'); ?></a>
+                            </div>
+                        </div>
+                    </div>    
                 </div>           
             </div>
         </div>
     </section>
 <?php endif; ?>
 
+<!-- appointment section -->
 
+<?php if (get_field('appointment_content')) : ?>
+    <section class="appointment-section" id="welcome">
+        <div class="container">
+            <div class="content-wrapper">
+                <?php the_field('appointment_content'); ?>
+            
+                <div class="link-btn">
+                    <a href="#"><?php getImage(get_field('appointment_arrow')); ?><?php the_field('appointment_text'); ?></a>
+                </div>
+            </div>
+        </div>
 
+    </section>
+<?php endif; ?>
 
 
 <?php if (have_rows('areas')) : ?>
