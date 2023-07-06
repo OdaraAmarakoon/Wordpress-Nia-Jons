@@ -111,6 +111,7 @@ section.about-section{
 
             h2{
                 color: #767B7D;
+                
 
                 span{
                     color: #BD08FA;
@@ -144,6 +145,7 @@ section.about-section{
             line-height: normal;
             text-transform: uppercase;
             margin-top: 30px;
+
             a{
                 display: flex;
                 align-items: center;
@@ -159,6 +161,7 @@ section.about-section{
 }
 
 section.approach-section{
+    padding-bottom: 0;
     .container{
 
         .row{
@@ -167,20 +170,27 @@ section.approach-section{
                 padding-left: 0;
             }
         }
-        img{
+        .col-lg-6{
             margin: -176px 0 0 0;
-            width: 100%;
+            height: 775px;
+            object-fit: cover;          
         }
 
         .squre-shape{
-            padding: 91px 40px 80px 53px;
+            padding: 91px 52px 10px 52px;
             height: 700px;
             width: 100%px;
             background-color: #ffffff;
-            margin: -246px 0 0 0; 
+            margin: -74px 0 0 0; 
             
             h2{
                 color: #767B7D;
+                font-size: 34px;
+                margin-bottom: 20px;
+                text-transform: uppercase;
+                text-align: left;
+                font-weight: 600;
+                
 
                 span{
                     color: #BD08FA;
@@ -205,22 +215,129 @@ section.approach-section{
                 font-style: normal;
                 font-weight: 600;
                 line-height: 175%;
+                text-transform: capitalize;
             }
+
+            div{
+               .link-btn{
+                color: #000000;
+                text-align: center;
+               } 
+            }
+            .link-btn{
+                color: #000000;
+                text-align: center;
+                font-size: 15px;
+                font-family: Josefin Sans;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                text-transform: uppercase;
+                margin-top: 30px;
+                margin-bottom: 30px;
+    
+                a{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                                  
+                    img{
+                        margin-right: 10px;
+                        height: 100%;
+                        
+                   
+                    }
+                }
+            }
+
         }
     }
 }
 
 section.services-section{
-    padding-top: 100px;
+    margin-top: 30px;
     background: #000000;
+    padding-top: 88px;
 
-    .container{
+    
         .content-wrapper{
-            img{
 
+            .row{
+                --bs-gutter-x: 0;
+            }
+            
+            .team-image{
+                width: 440px;
+                height: 576px;
+                object-fit: cover;
+                margin-top: 30px;
+            }
+
+            .team-img-description{
+                position: relative;
+                bottom: 105px;
+                color: #FFF;
+                text-align: center;
+                font-size: 36px;
+                font-family: Philosopher;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 124%;
+                text-transform: uppercase;
+            }
+
+            h6{
+                color: #767B7D;
+                text-align: center;
+                font-size: 16px;
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 124%;
+                text-transform: uppercase;
+            }
+
+            h2{
+                color: #E0E0E0;
+                font-size: 34px;
+                margin-bottom: 20px;
+                text-transform: uppercase;
+                text-align: center;
+                font-weight: 600;
+                
+
+                span{
+                    color: #BD08FA;
+                }
+            }
+
+            .link-btn{
+                color: #FFFFFF;
+                text-align: center;
+                font-size: 15px;
+                font-family: Josefin Sans;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                text-transform: uppercase;
+                margin-top: 30px;
+                margin-bottom: 30px;
+    
+                a{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                                  
+                    img{
+                        margin-right: 10px;
+                        height: 100%;
+                        
+                   
+                    }
+                }
             }
         }
-    }
+    
 }
 
 section.contact-section{

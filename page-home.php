@@ -65,7 +65,19 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="squre-shape">
-                        <div class="content-wrapper"><?php the_field('approach_content'); ?></div>
+                        <div class="content-wrapper">
+                            <?php the_field('approach_content'); ?>
+                            <div class="link-btn">
+                                <a href="#"><?php getImage(get_field('arrow_approach')); ?><?php the_field('see_more_text'); ?></a>
+                            </div>
+                        </div>
+                        <?php while (have_rows('service_repeater')) : the_row(); ?>
+                        <div class="ratings">                        
+                            <div class="team-image">
+                                <?php getImage(get_sub_field('rating')); ?>
+                            </div>                   
+                        </div>
+                         <?php endwhile; ?>
                         <div class="content-wrapper"><?php the_field('approach_swiper'); ?></div>
                     </div>
                 </div>
@@ -78,7 +90,6 @@
 <!--services section -->
 <?php if (get_field('services_content')) : ?>
     <section class="services-section">
-        <div class="container">
             <div class="content-wrapper">
                 <?php the_field('services_content'); ?>
                 <div class="row">
@@ -92,9 +103,13 @@
                         </div>                     
                     </div>
                 <?php endwhile; ?>
+                <div class="link-btn">
+                    <a href="#"><?php getImage(get_field('service_link_image')); ?><?php the_field('service_link'); ?></a>
+                </div>
+
+
                 </div>
             </div>
-        </div>
     </section>
 <?php endif; ?>
 
