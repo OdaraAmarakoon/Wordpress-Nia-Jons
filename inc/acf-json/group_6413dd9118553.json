@@ -41,8 +41,28 @@
         },
         {
             "key": "field_64a38ee0565ec",
-            "label": "Banner content",
-            "name": "banner_content",
+            "label": "Banner contact1",
+            "name": "banner_contact1",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_64a684153a64a",
+            "label": "Banner contact2",
+            "name": "banner_contact2",
             "aria-label": "",
             "type": "wysiwyg",
             "instructions": "",
@@ -942,5 +962,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1688604568
+    "modified": 1688634413
 }

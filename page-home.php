@@ -11,28 +11,10 @@
             <div class="col-lg-6">
                 <div class="content-wrapper">
                     <?php the_field('banner_heading'); ?>
-                    
-                    <div class="col-lg-3">
-                        <div class="banner-content">
-                            <?php if ($telephone = get_field('telephone_1', 'option')) : ?>
-                                <div class="content-wrapper">
-                                    <h5><?php echo get_field('location_first'); ?>:</h5>
-                                </div>
-                                <a href="tel:<?php echo $telephone; ?>"><?php echo $telephone; ?></a>
-                            <?php endif; ?>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="banner-content">
-                            <?php if ($telephone = get_field('telephone_1', 'option')) : ?>
-                                <div class="content-wrapper">
-                                    <h5><?php echo get_field('location_first'); ?>:</h5>
-                                </div>
-                                <a href="tel:<?php echo $telephone; ?>"><?php echo $telephone; ?></a>
-                            <?php endif; ?>
-                        </div>
-                    </div>
-                    
+                    <div class="banner-contact-wrapper">
+                        <h6><?php the_field('banner_contact1'); ?></h6>
+                        <h6><?php the_field('banner_contact2'); ?></h6>
+                    </div>                                                                                      
                 </div>
             </div>           
         </div>
