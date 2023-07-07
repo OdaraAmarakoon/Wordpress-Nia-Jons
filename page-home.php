@@ -127,24 +127,22 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="contact-bground">
-                        <div><?php getImage(get_field('image_1')); ?></div>
-                        <div class="content-wrapper">
+                        <div class="col-img-loc"><?php getImage(get_field('image_1')); ?></div>                        
                             <div class="location"><?php the_field('image_1_location'); ?></div>
                             <div class="link-btn">
                                 <a href="#"><?php getImage(get_field('location_arrow')); ?><?php the_field('contact_link'); ?></a>
-                            </div>
-                        </div>
+                            </div>                    
                     </div>    
                 </div>           
                 <div class="col-lg-6">
                     <div class="contact-bground">
-                        <div><?php getImage(get_field('image_2')); ?></div>
-                        <div class="content-wrapper">
+                        <div class="col-img-loc"><?php getImage(get_field('image_2')); ?></div>
+                        
                         <?php the_field('image_2_location'); ?>
                             <div class="link-btn">
                                 <a href="#"><?php getImage(get_field('location_arrow')); ?><?php the_field('contact_link'); ?></a>
                             </div>
-                        </div>
+                        
                     </div>    
                 </div>           
             </div>
@@ -165,34 +163,29 @@
                 </div>
             </div>
         </div>
-
     </section>
 <?php endif; ?>
 
+<!-- galary section -->
 
-<?php if (have_rows('areas')) : ?>
-    <section class="areas-section">
+<?php if (get_field('image_grid')) : ?>
+    <section class="galary-section" id="welcome">
         <div class="container">
-            <?php if (get_field('areas_title')) : ?>
-                <div class="content-wrapper"><?php the_field('areas_title'); ?></div>
-            <?php endif; ?>
-            <div class="row">
-                <?php while (have_rows('areas')) : the_row(); ?>
-                    <div class="col-sm-12 col-md-6 col-lg-3">
-                        <div class="item">
-                            <div class="image">
-                                <?php getImage(get_sub_field('image'), 'full-image'); ?>
-                            </div>
-                            <h3><?php the_sub_field('title'); ?></h3>
-                            <?php if (get_sub_field('link')) : ?>
-                                <a href="<?php the_field('link'); ?>" target="_blank" class="full-link"></a>
-                            <?php endif; ?>
-                        </div>
-                    </div>
-                <?php endwhile; ?>
+        <?php while (have_rows('image_grid')) : the_row(); ?>
+            <div class="col-lg-3 galary-detals">                        
+                <div class="galary-image">
+                    <?php getImage(get_sub_field('galary_image')); ?>
+                </div>
+                <div class="galary-img-description">
+                    <?php the_sub_field('galary_text'); ?>
+                </div>                     
             </div>
+        <?php endwhile; ?>
         </div>
     </section>
 <?php endif; ?>
+
+
+
 
 <?php get_footer(); ?>

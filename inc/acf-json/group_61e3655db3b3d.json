@@ -272,12 +272,12 @@
             "endpoint": 0
         },
         {
-            "key": "field_6413e1e44ee83",
-            "label": "Google Map",
-            "name": "google_map",
+            "key": "field_64a7880198842",
+            "label": "page column",
+            "name": "page_column",
             "aria-label": "",
-            "type": "textarea",
-            "instructions": "Google map embedded code",
+            "type": "link",
+            "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -285,19 +285,15 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "maxlength": "",
-            "rows": "",
-            "placeholder": "",
-            "new_lines": ""
+            "return_format": "array"
         },
         {
-            "key": "field_636ca313276f7",
-            "label": "Schedule Form",
-            "name": "schedule_form",
+            "key": "field_64a7884798843",
+            "label": "office hours column",
+            "name": "office_hours_column",
             "aria-label": "",
-            "type": "post_object",
-            "instructions": "Enter menu name here",
+            "type": "repeater",
+            "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -305,22 +301,65 @@
                 "class": "",
                 "id": ""
             },
-            "post_type": [
-                "forminator_forms"
-            ],
-            "taxonomy": "",
-            "return_format": "id",
-            "multiple": 0,
-            "allow_null": 0,
-            "ui": 1
+            "layout": "table",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Add Row",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_64a7886498844",
+                    "label": "day",
+                    "name": "day",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_64a7884798843"
+                },
+                {
+                    "key": "field_64a7887998845",
+                    "label": "time",
+                    "name": "time",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_64a7884798843"
+                }
+            ]
         },
         {
-            "key": "field_61ec3af16b0ae",
-            "label": "Copyrights Text",
-            "name": "copyrights_text",
+            "key": "field_64a788bb92a84",
+            "label": "Nebraska",
+            "name": "nebraska",
             "aria-label": "",
-            "type": "text",
-            "instructions": "[year] - Current Year",
+            "type": "repeater",
+            "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -328,11 +367,133 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
+            "layout": "table",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Add Row",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_64a788e892a85",
+                    "label": "logo",
+                    "name": "logo",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "id",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "preview_size": "medium",
+                    "parent_repeater": "field_64a788bb92a84"
+                },
+                {
+                    "key": "field_64a788fe92a86",
+                    "label": "Nebraska text",
+                    "name": "nebraska_text",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_64a788bb92a84"
+                }
+            ]
+        },
+        {
+            "key": "field_64a7893b92a88",
+            "label": "Omaha column",
+            "name": "omaha_column",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Add Row",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_64a7895e92a89",
+                    "label": "Omaha image",
+                    "name": "omaha_image",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "id",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "preview_size": "medium",
+                    "parent_repeater": "field_64a7893b92a88"
+                },
+                {
+                    "key": "field_64a7897092a8a",
+                    "label": "Omaha text",
+                    "name": "omaha_text",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_64a7893b92a88"
+                }
+            ]
         }
     ],
     "location": [
@@ -353,5 +514,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1688441379
+    "modified": 1688701310
 }

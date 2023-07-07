@@ -259,9 +259,9 @@ section.services-section{
     
         .content-wrapper{
 
-            // .row{
-            //     --bs-gutter-x: 0;
-            // }
+            .row{
+                --bs-gutter-x: 0;
+            }
   
             
             
@@ -506,25 +506,35 @@ section.loction-section{
 }
 
 section.appointment-section{
-    padding-top: 50px;
+    padding-top: 100px;
     background: #000000;
     margin: 0;
     
     .container{
-        .content-wrapper{
-            h6{
-                text-align: center;
-            }
-            .link-btn{
-                color: #FFFFFF;
 
-                a{
-                    justify-content: center;
+        .col-lg-6{
+            width:50%;
+            position: relative;
+
+
+            position: absolute;
+                h6{
+                    text-align: center;
                 }
-                
-            }  
-
-            
+                .link-btn{
+                    color: #FFFFFF;
+    
+                    a{
+                        justify-content: center;
+                    }   
+                }  
         }
+        
+    }
+}
+
+section.galary-section{
+    .container{
+
     }
 }
