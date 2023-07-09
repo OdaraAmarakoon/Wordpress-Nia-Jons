@@ -120,31 +120,23 @@
 <?php endif; ?>
 
 <!-- location Section -->
-<?php if (get_field('location_title')) : ?>
-    <section class="loction-section" id="welcome">
+<?php if (get_field('image_box')) : ?>
+    <section class="location-section" id="welcome">
+        <div>
         <?php the_field('location_title'); ?>
+        </div>
         <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="contact-bground">
-                        <div class="col-img-loc"><?php getImage(get_field('image_1')); ?></div>                        
-                            <div class="location"><?php the_field('image_1_location'); ?></div>
-                            <div class="link-btn">
-                                <a href="#"><?php getImage(get_field('location_arrow')); ?><?php the_field('contact_link'); ?></a>
-                            </div>                    
-                    </div>    
-                </div>           
-                <div class="col-lg-6">
-                    <div class="contact-bground">
-                        <div class="col-img-loc"><?php getImage(get_field('image_2')); ?></div>
-                        
-                        <?php the_field('image_2_location'); ?>
-                            <div class="link-btn">
-                                <a href="#"><?php getImage(get_field('location_arrow')); ?><?php the_field('contact_link'); ?></a>
-                            </div>
-                        
-                    </div>    
-                </div>           
+            <div class="location-wrapper">
+            <?php while (have_rows('image_box')) : the_row(); ?>
+                <div class="location-image">                                      
+                    <div class="location-img"><?php getImage(get_sub_field('image_1')); ?> </div>              
+                    <div class="content-wrappr"><?php the_sub_field('image_1_location'); ?></div> 
+                    
+                    <div class="link-btn">
+                            <a href="#"><?php getImage(get_field('location_arrow')); ?><?php the_field('location_text'); ?></a>
+                        </div>
+                </div>
+            <?php endwhile; ?>
             </div>
         </div>
     </section>
@@ -162,6 +154,20 @@
                     <a href="#"><?php getImage(get_field('appointment_arrow')); ?><?php the_field('appointment_text'); ?></a>
                 </div>
             </div>
+
+            <?php if (have_rows('appointment_swiper')) : ?>
+            <div class="swiper" id="partnersSwiper">
+                <div class="swiper-wrapper">
+                    <?php while (have_rows('appointment_swiper')) : the_row(); ?>
+                        <div class="swiper-slide">
+                            <div class="swiper-img">
+                                <?php getImage(get_sub_field('appointment_image'), 'full-image  bgs'); ?>
+                            </div>
+                        </div>
+                    <?php endwhile; ?>
+                </div>
+            </div>    
+            <?php endif; ?>
         </div>
     </section>
 <?php endif; ?>
@@ -170,15 +176,11 @@
 
 <?php if (get_field('image_grid')) : ?>
     <section class="galary-section" id="welcome">
-        <div class="container">
+        <div class="galary-wrapper">
         <?php while (have_rows('image_grid')) : the_row(); ?>
-            <div class="col-lg-3 galary-detals">                        
-                <div class="galary-image">
-                    <?php getImage(get_sub_field('galary_image')); ?>
-                </div>
-                <div class="galary-img-description">
-                    <?php the_sub_field('galary_text'); ?>
-                </div>                     
+            <div class="galary-image">                                      
+                <?php getImage(get_sub_field('galary_image')); ?>               
+                <?php the_sub_field('galary_text'); ?>                                 
             </div>
         <?php endwhile; ?>
         </div>
