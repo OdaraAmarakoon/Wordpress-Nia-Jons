@@ -2,19 +2,27 @@ jQuery(document).ready(function ($) {
 
 	Fancybox.bind("[data-fancybox]");
 
-	new Swiper('#testimonialsSwiper', {
+	new Swiper('#appointmentSwiper', {
 		loop: true,
 		autoplay: {
 			delay: 5000,
 			disableOnInteraction: false
 		},
-		slidesPerView: 1,
+		slidesPerView: 5,
 		speed: 500,
 		preventClicksPropagation: false,
-		navigation: {
-			nextEl: '.testimonials-next',
-			prevEl: '.testimonials-prev',
+		
+	});
+
+	new Swiper('#approachSwiper', {
+		loop: true,
+		autoplay: {
+			delay: 5000,
+			disableOnInteraction: false
 		},
+		slidesPerView: 3,
+		speed: 500,
+		preventClicksPropagation: false,
 	});
 
 	// Sticky Menu

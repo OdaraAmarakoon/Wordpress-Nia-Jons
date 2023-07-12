@@ -99,8 +99,8 @@
         },
         {
             "key": "field_61e36b1f7ee54",
-            "label": "Telephone",
-            "name": "telephone",
+            "label": "Telephone 1",
+            "name": "telephone_1",
             "aria-label": "",
             "type": "text",
             "instructions": "",
@@ -112,15 +112,15 @@
                 "id": ""
             },
             "default_value": "",
+            "maxlength": "",
             "placeholder": "",
             "prepend": "",
-            "append": "",
-            "maxlength": ""
+            "append": ""
         },
         {
             "key": "field_61e36b2a7ee55",
-            "label": "Email",
-            "name": "email",
+            "label": "Email 1",
+            "name": "email_1",
             "aria-label": "",
             "type": "text",
             "instructions": "",
@@ -132,15 +132,15 @@
                 "id": ""
             },
             "default_value": "",
+            "maxlength": "",
             "placeholder": "",
             "prepend": "",
-            "append": "",
-            "maxlength": ""
+            "append": ""
         },
         {
             "key": "field_61e36b2e7ee56",
-            "label": "Address",
-            "name": "address",
+            "label": "Address 1",
+            "name": "address_1",
             "aria-label": "",
             "type": "textarea",
             "instructions": "",
@@ -152,9 +152,69 @@
                 "id": ""
             },
             "default_value": "",
-            "placeholder": "",
             "maxlength": "",
             "rows": "",
+            "placeholder": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_64ae124bf7803",
+            "label": "Telephone 2",
+            "name": "telephone_2",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_64ae128df7805",
+            "label": "Email 2",
+            "name": "email_2",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_64ae12a1f7806",
+            "label": "Address 2",
+            "name": "address_2",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "rows": "",
+            "placeholder": "",
             "new_lines": ""
         },
         {
@@ -175,49 +235,9 @@
             "endpoint": 0
         },
         {
-            "key": "field_61e36e6271d49",
-            "label": "Facebook",
-            "name": "facebook",
-            "aria-label": "",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
             "key": "field_61e36e6a71d4a",
             "label": "Twitter",
             "name": "twitter",
-            "aria-label": "",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_61e36e6f71d4b",
-            "label": "Instagram",
-            "name": "instagram",
             "aria-label": "",
             "type": "text",
             "instructions": "",
@@ -255,6 +275,46 @@
             "maxlength": ""
         },
         {
+            "key": "field_61e36e6271d49",
+            "label": "Facebook",
+            "name": "facebook",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_61e36e6f71d4b",
+            "label": "Instagram",
+            "name": "instagram",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_61ec3acc6b0ac",
             "label": "Footer",
             "name": "",
@@ -272,11 +332,11 @@
             "endpoint": 0
         },
         {
-            "key": "field_64a7880198842",
-            "label": "page column",
-            "name": "page_column",
+            "key": "field_64ab55f7a5b19",
+            "label": "footer logo",
+            "name": "footer_logo",
             "aria-label": "",
-            "type": "link",
+            "type": "image",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -285,14 +345,23 @@
                 "class": "",
                 "id": ""
             },
-            "return_format": "array"
+            "return_format": "id",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "medium"
         },
         {
-            "key": "field_64a7884798843",
-            "label": "office hours column",
-            "name": "office_hours_column",
+            "key": "field_64ab5574a5b15",
+            "label": "sub topic 1",
+            "name": "sub_topic_1",
             "aria-label": "",
-            "type": "repeater",
+            "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -301,57 +370,31 @@
                 "class": "",
                 "id": ""
             },
-            "layout": "table",
-            "pagination": 0,
-            "min": 0,
-            "max": 0,
-            "collapsed": "",
-            "button_label": "Add Row",
-            "rows_per_page": 20,
-            "sub_fields": [
-                {
-                    "key": "field_64a7886498844",
-                    "label": "day",
-                    "name": "day",
-                    "aria-label": "",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "maxlength": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "parent_repeater": "field_64a7884798843"
-                },
-                {
-                    "key": "field_64a7887998845",
-                    "label": "time",
-                    "name": "time",
-                    "aria-label": "",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "maxlength": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "parent_repeater": "field_64a7884798843"
-                }
-            ]
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_64ab55c2a5b16",
+            "label": "sub topic 2",
+            "name": "sub_topic_2",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
         },
         {
             "key": "field_64a788bb92a84",
@@ -425,9 +468,184 @@
             ]
         },
         {
-            "key": "field_64a7893b92a88",
-            "label": "Omaha column",
-            "name": "omaha_column",
+            "key": "field_64ab55cca5b17",
+            "label": "sub topic 3",
+            "name": "sub_topic_3",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_64abeb13c7c69",
+            "label": "sec2 icon phone",
+            "name": "sec2_icon_phone",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_64abeb94c7c6c",
+            "label": "sec2 phone",
+            "name": "sec2_phone",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_64abeb6ac7c6a",
+            "label": "sec2 icon mail",
+            "name": "sec2_icon_mail",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_64abebb7c7c6e",
+            "label": "sec2 mail",
+            "name": "sec2_mail",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_64abeb74c7c6b",
+            "label": "sec2 icon location",
+            "name": "sec2_icon_location",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_64abebb6c7c6d",
+            "label": "sec2 location",
+            "name": "sec2_location",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_64ab55d0a5b18",
+            "label": "sub topic 4",
+            "name": "sub_topic_4",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_64a7884798843",
+            "label": "office hours column",
+            "name": "office_hours_column",
             "aria-label": "",
             "type": "repeater",
             "instructions": "",
@@ -447,35 +665,9 @@
             "rows_per_page": 20,
             "sub_fields": [
                 {
-                    "key": "field_64a7895e92a89",
-                    "label": "Omaha image",
-                    "name": "omaha_image",
-                    "aria-label": "",
-                    "type": "image",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "return_format": "id",
-                    "library": "all",
-                    "min_width": "",
-                    "min_height": "",
-                    "min_size": "",
-                    "max_width": "",
-                    "max_height": "",
-                    "max_size": "",
-                    "mime_types": "",
-                    "preview_size": "medium",
-                    "parent_repeater": "field_64a7893b92a88"
-                },
-                {
-                    "key": "field_64a7897092a8a",
-                    "label": "Omaha text",
-                    "name": "omaha_text",
+                    "key": "field_64a7886498844",
+                    "label": "day",
+                    "name": "day",
                     "aria-label": "",
                     "type": "text",
                     "instructions": "",
@@ -491,9 +683,50 @@
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
-                    "parent_repeater": "field_64a7893b92a88"
+                    "parent_repeater": "field_64a7884798843"
+                },
+                {
+                    "key": "field_64a7887998845",
+                    "label": "time",
+                    "name": "time",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_64a7884798843"
                 }
             ]
+        },
+        {
+            "key": "field_64ae182e49106",
+            "label": "Copyrights Text",
+            "name": "copyrights_text",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "[year] - Current Year",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
         }
     ],
     "location": [
@@ -514,5 +747,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1688701310
+    "modified": 1689152463
 }

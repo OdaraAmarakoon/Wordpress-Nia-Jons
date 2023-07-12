@@ -1,12 +1,19 @@
 footer.main-footer {
-    margin-top: -307px;;
+    margin-top: -60px;
     padding: @default-margin 0;
-    background-color: #15051D;
-    color: #ffffff;
+    background: #000;
+    color: #ffffff;  
 
-    @media @mobileTab {
-        text-align: center;
-    }   
+    .logo-wrapper {
+        margin-bottom: -50px;
+        display: flex;
+        justify-content: center;
+
+        img {
+            max-width: 250px;
+            // .transitions();
+        }
+    }
 
     #navbarCollapse {
         ul{
@@ -20,90 +27,77 @@ footer.main-footer {
         display: flex;
         justify-content: space-between;
     
-        #menu-footer-menu {
-          display: grid;
-          grid-template-columns: repeat(2, 1fr);
-          row-gap: 10px;
-          column-gap: 40px;
-    
-        //   a {
-        //     font-family: "Noto Sans", sans-serif;
-        //     font-size: 16px;
-        //     font-weight: 600;
-        //   }
-        }
     }
     .row{
-        padding-top: 170px;
+        padding-top: 70px;
     }
-       
+   
+    .col{
+        .sub-topics{
+            margin-bottom: 20px;
+            color: #FFF;
+            font-family: Philosopher;
+            font-size: 16px !important  ;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 177.2%;
+            text-transform:uppercase;
+        } 
+        
+        .icon {
+            transform: rotate(-36deg);
+            margin-bottom: 3px;
+        }
+
+        .column-wrapper{
+            font-size: 13px;
+            line-height: 28px;
+        }
+    
+    }
+
+    .menu-wrapper{
+        width: 300px !important;
+    }
+
+   
     
     .footer-menu {
-    
-  
+
         a {
-            font-family: "Noto Sans", sans-serif;
-            font-size: 16px;
-            font-weight: 600;
+            color: #FFF;
+            font-family: Josefin Sans;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 28px;
+            text-transform: capitalize;
         }
     }
-        .col{
-            .sub-topics{
-                h5{
-                    color: #ED9AA2;
-                    font-family: 'Noto Sans', sans-serif;
-                    font-weight: 700;
-                    font-size: 16px;
-                    margin-bottom: 10px;
-                }               
-            } 
-            
-            .social-media-1 {
-                position: absolute;
-                display: flex;
-                padding-bottom: 30px;
-                bottom: 0;
-                right: 0;
-            }
-
-            .social-media-1 a{
-                font-size: 26px;
-                color: #ffffff;
-                background: #ED9AA2;
-                width: 38px;
-                height: 38px;
-                padding: 20px;
-                border-radius: 50%;
-                margin-right: 20px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-        }
         
-                // .social-media-1 a{
-                //     font-size: 26px;
-                //     color: #ffffff;
-                //     background: #ED9AA2;
-                //     width: 38px;
-                //     height: 38px;
-                //     padding: 20px;
-                //     border-radius: 50%;
-                //     margin-right: 20px;
-                //     display: flex;
-                //     justify-content: center;
-                //     align-items: center;
-                // }
+        
             .date_time_column{
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 font-family: "Noto Sans", sans-serif;
-                font-size: 16px;
-                font-weight: 600;
+                color: #FFF;
+                font-family: Josefin Sans;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 210.2%;
                 text-transform: capitalize;
-                color: #fff;
-                margin-bottom: 5px;
-                line-height: 28px;
+                
+                span{
+                    color: #FFF;
+                    font-family: Josefin Sans;
+                    font-size: 13px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 210.2%;
+                    text-transform: lowercase;
+
+                }
             }    
 
             .address { 
@@ -113,59 +107,98 @@ footer.main-footer {
                     font-size: 16px;         
                     margin-bottom: 20px;
                     line-height: 28px;
-                }  
-            
+                }             
             }
-
-            
-        
-                .menu-wrapper{
-    
-                    navbarCollapse{
-                        padding-left: 0;
-                        display: grid;
-                        grid-template-columns: repeat(2, 1fr);
-                        row-gap: 20px;
-                    }
-                }
-                
-                .copyrights {
-                display: flex;
-                align-items: center;
-                flex-wrap: wrap;
-                margin-top: 40px;
-    
-                    @media @mobileTab {
-                        flex-direction: column;
-                    }
-                }
-                p {
-                    margin-bottom: 0;
-                    font-size: 12px;
-                }
-    
-                .copyrights-text {
-                    margin-right: 25px;
-    
-                    @media @mobileTab {
-                        margin: 0 0 15px;
-                    }
-                }
-    
-                .maya-wrapper {
-                    a {
-                        display: flex;
-                        align-items: center;
-                    }
-    
-                    img {
-                        max-width: 90px;
-                        margin-left: 10px;
-                    }
-                }
+           
 
     .footer-subheading {
         font-size: 36px;
         margin-bottom: 20px;
+    }
+
+    .footer-bottom{
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+
+        .social-media-wrapper {
+            div {
+                display: flex;
+                gap: 15px;
+
+                a{
+                    display: flex;
+                    background: #fff;
+                    height: 32px;
+                    width: 32px;
+                    padding: 20px;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+        
+                    i {
+                        color: #000;
+                        font-size: 24px;                    
+                    }
+
+                    img{
+                        margin-right: 10px;
+                        height: 100%;
+                                           
+                    }
+                }
+            }
+        }
+
+        .copyrights {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 40px 40px 0 0;
+
+                @media @mobileTab {
+                    flex-direction: column;
+                }
+        
+            p {
+                margin-bottom: 0;
+                font-size: 12px;
+            }
+
+        }
+
+        .maya-wrapper {
+            a {
+                display: flex;
+                align-items: center;
+                color: #FFF;
+                font-family: Open Sans;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                text-transform: capitalize;
+            }
+
+            img {
+                max-width: 90px;
+                margin-left: 10px;
+            }
+        }
+
+        .copyrights-text {
+            margin-right: 25px;
+            color: #767676;
+            font-family: Open Sans;
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            text-transform: capitalize;
+
+            @media @mobileTab {
+                margin: 0 0 15px;
+            }
+        }
     }
 }

@@ -2,8 +2,8 @@ section.banner-section {
     position: relative;
     width: 100%;
     height: 100%;
-    margin-top: -44px;
-    padding: 250px 0 0;
+    margin-top: 0px;
+    padding: 250px 0 ;
 
     @media @mobileTab {
         text-align: center;
@@ -12,9 +12,8 @@ section.banner-section {
     .container {
         position: relative;
         z-index: 2;
-        // padding-top: 150px;
-        padding-bottom: 250px;
-
+        padding-top: 50px;
+        
         @media @mobileTab {
             padding: 0;
         }
@@ -25,7 +24,7 @@ section.banner-section {
 
         .content-wrapper {
             @media @mobileTab {
-                margin-bottom: 50px;
+                margin-bottom: 40px;
             }
     
             h1 {
@@ -35,9 +34,7 @@ section.banner-section {
                 line-height: 65px;
                 text-transform: uppercase;
 
-                span{
-                    color: #BD08FA;
-                }
+                
             }
 
             h5{
@@ -60,17 +57,21 @@ section.banner-section {
                     font-family: Poppins;
                     font-style: normal;
                     font-weight: 600;
+                    margin-right: 26px;
                     text-transform: uppercase;
-                    padding-right: 10px;
+                    padding-right: 18px;
                     line-height: 26px;
+                    margin-left: -21px;
+                    text-align: left;
+
+                    span{
+                        color: #C7C7C7;
+                        font-size: 20px;
+                        font-family: Poppins;
+                        font-weight: 500;
+                    }
                 }
-    
-                span{
-                    color: #C7C7C7;
-                    font-size: 20px;
-                    font-family: Poppins;
-                    font-weight: 500;
-                }
+   
             }
         }       
     }    
@@ -110,9 +111,6 @@ section.about-section{
                 color: #767B7D;
                 
 
-                span{
-                    color: #BD08FA;
-                }
             }
 
             p{
@@ -180,18 +178,12 @@ section.approach-section{
             background-color: #ffffff;
             margin: -74px 0 0 0; 
             
-            h2{
-                color: #767B7D;
+            h2{               
                 font-size: 34px;
                 margin-bottom: 20px;
                 text-transform: uppercase;
                 text-align: left;
                 font-weight: 600;
-                
-
-                span{
-                    color: #BD08FA;
-                }
             }
 
             h6{
@@ -236,17 +228,15 @@ section.approach-section{
                 a{
                     display: flex;
                     align-items: center;
-                    justify-content: center;
+                    justify-content: left;
                                   
                     img{
                         margin-right: 10px;
                         height: 100%;
-                        
-                   
+                                           
                     }
                 }
             }
-
         }
     }
 }
@@ -256,17 +246,15 @@ section.services-section{
     background: #000000;
     padding-top: 88px;
 
-    
         .content-wrapper{
 
             .row{
                 --bs-gutter-x: 0;
             }
-  
-            
-            
+                
             .team-image{
                 height: 576px;
+                width: 427px;
                 object-fit: cover;
                 margin-top: 30px;
               
@@ -335,7 +323,6 @@ section.services-section{
                 }
             }
         }
-    
 }
 
 section.contact-section{
@@ -355,7 +342,6 @@ section.contact-section{
         height: 100%;
         object-fit: cover;
     }
-
     
     .col-lg-6{
         width: 55%;
@@ -385,7 +371,6 @@ section.contact-section{
             text-align: left;
             font-weight: 600;
                 
-
             span{
                 color: #BD08FA;
             }
@@ -499,7 +484,6 @@ section.location-section{
                         font-weight: 500; 
                     }
                 }
-
             }
 
             .link-btn{
@@ -516,36 +500,42 @@ section.location-section{
                 margin-bottom: 145px;
                 z-index: 10;
 
-        
                 a{
                     display: flex;
                     align-items: center;
                     justify-content: center;
                 
-                    
-                                  
+                
                     img{
                         margin-right: 10px;
                         height: 100%;
-                        
-                   
                     }
                 }
-        
-            }  
-
-            
+            }      
         }
     }
     
 }
 
 section.appointment-section{
-    padding-top: 250px;
-    background: #000000;
-    margin-top: -290px;
+    padding-top: 296px;
+    background: #000;
+    margin-top: -293px;
     
     .container{
+
+        h2{
+            color:#E0E0E0;
+            font-size: 34px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: 600;
+                
+            span{
+                color: #BD08FA;
+            }
+        } 
 
         .link-btn{
             color: #FFFFFF;
@@ -568,26 +558,26 @@ section.appointment-section{
     
         } 
 
-        // .swiper-slide {
-        //   display: flex;
-        //   justify-content: center;
-        // }
+        .swiper-slide {
+          display: flex;
+          justify-content: center;
+        }
       
-        // .swiper-img {
-        //   position: relative;
+        .swiper-img {
+          position: relative;
     
       
-        //   .full-image {
-        //     object-fit: contain;
-        //   }
-        // }
+          .full-image {
+            object-fit: contain;
+          }
+        }
         
     }
 }
 
 section.galary-section{ 
-    margin: 0 0 100px 0;
-    padding-top: 100px;
+    margin: 0;
+    // padding-top: 100px;
    .galary-wrapper{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -617,18 +607,8 @@ section.galary-section{
                 line-height: normal;
                 text-transform: uppercase;
                 
-            }
-
-            // div{  
-            //     width: 218px;
-            //     height: 47px;
-            //     flex-direction: column;
-            //     flex-shrink: 0; 
-            // }
-            
+            } 
         }
-   }
-
-   
+    } 
 }
         

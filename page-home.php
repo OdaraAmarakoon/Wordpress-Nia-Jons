@@ -53,14 +53,18 @@
                                 <a href="#"><?php getImage(get_field('arrow_approach')); ?><?php the_field('see_more_text'); ?></a>
                             </div>
                         </div>
-                        <?php while (have_rows('service_repeater')) : the_row(); ?>
-                        <div class="ratings">                        
-                            <div class="team-image">
-                                <?php getImage(get_sub_field('rating')); ?>
-                            </div>                   
+
+                        <div class="swiper" id="approachSwiper">
+                            <div class="swiper-wrapper">
+                                <?php while (have_rows('approach_swiper')) : the_row(); ?>
+                                    <div class="swiper-slide">
+                                      
+                                    
+                                        <p class="testimonial-name"><?php the_sub_field('author_name'); ?></p>
+                                    </div>
+                                <?php endwhile; ?>
+                            </div>
                         </div>
-                         <?php endwhile; ?>
-                        <div class="content-wrapper"><?php the_field('approach_swiper'); ?></div>
                     </div>
                 </div>
             </div>
@@ -156,12 +160,12 @@
             </div>
 
             <?php if (have_rows('appointment_swiper')) : ?>
-            <div class="swiper" id="partnersSwiper">
+            <div class="swiper" id="appointmentSwiper">
                 <div class="swiper-wrapper">
                     <?php while (have_rows('appointment_swiper')) : the_row(); ?>
                         <div class="swiper-slide">
                             <div class="swiper-img">
-                                <?php getImage(get_sub_field('appointment_image'), 'full-image  bgs'); ?>
+                                <?php getImage(get_sub_field('appointment_image')); ?>
                             </div>
                         </div>
                     <?php endwhile; ?>
