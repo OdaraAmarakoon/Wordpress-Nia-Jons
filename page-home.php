@@ -42,8 +42,11 @@
     <section class="approach-section" id="welcome">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
-                <?php getImage(get_field('approach_image')); ?>
+                <div class="col-lg-6 approach-img">
+                 
+                    <?php getImage(get_field('approach_image')); ?>
+
+                    
                 </div>
                 <div class="col-lg-6">
                     <div class="squre-shape">

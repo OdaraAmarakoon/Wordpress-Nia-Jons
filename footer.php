@@ -36,7 +36,7 @@
                 </div>
             </div>
 
-			<div class="col-lg-3 col col-3">
+			<div class="col-lg-3 col">
 				<?php if (get_field('sub_topic_2', 'option')) : ?>
 				<div class="sub-topics"><?php the_field('sub_topic_2', 'option'); ?></div>
 				<?php endif; ?>	
@@ -94,7 +94,7 @@
 
 			
 
-			<div class="col-lg-3 col col-4">
+			<div class="col-lg-3 col">
 				<?php if (get_field('sub_topic_4', 'option')) : ?>
 				<div class="sub-topics"><?php the_field('sub_topic_4', 'option'); ?></div>
 				<?php endif; ?>	

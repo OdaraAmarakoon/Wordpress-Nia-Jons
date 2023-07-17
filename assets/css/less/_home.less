@@ -7,7 +7,33 @@ section.banner-section {
 
     @media @mobileTab {
         text-align: center;
+        background: #14191B;
+        padding: 199px 0 150px 0;
+      
     }
+
+    .full-image {
+        pointer-events: none;
+        width: 100%;
+        opacity: 1;
+    
+        @media @mobileTab {
+            position: initial;
+            width: 100%;
+            // padding: 0 50px 0 0;
+            // opacity: 20%;
+        }
+      }
+    
+    //   &::before {
+    //     content: "";
+    //     position: absolute;
+    //     left: 0;
+    //     top: 0;
+    //     width: 100%;
+    //     height: 100%;
+    //     background: linear-gradient(to top, #292929 20%, #000000 100%);
+    // }
 
     .container {
         position: relative;
@@ -15,7 +41,8 @@ section.banner-section {
         padding-top: 50px;
         
         @media @mobileTab {
-            padding: 0;
+            padding:20px 0;
+            text-align: center;
         }
 
         .row {
@@ -23,18 +50,18 @@ section.banner-section {
         }
 
         .content-wrapper {
-            @media @mobileTab {
-                margin-bottom: 40px;
-            }
-    
+        
             h1 {
                 font-size: 60px;
                 color: #FFF;
                 text-align: left;
                 line-height: 65px;
-                text-transform: uppercase;
-
+                text-transform: uppercase; 
                 
+                @media @mobileTab {
+                    text-align: center;
+                }
+
             }
 
             h5{
@@ -48,8 +75,12 @@ section.banner-section {
             }
             .banner-contact-wrapper{
                 display: flex;
-                
-               
+
+                @media @mobileTab {
+                    padding: 0px 21px 0 79px;
+                    display: grid;
+                    justify-content: center;
+                }
 
                 h6{    
                     color: #767676;
@@ -64,6 +95,10 @@ section.banner-section {
                     margin-left: -21px;
                     text-align: left;
 
+                    @media @mobileTab {
+                        text-align: center;
+                    }
+
                     span{
                         color: #C7C7C7;
                         font-size: 20px;
@@ -73,6 +108,11 @@ section.banner-section {
                 }
    
             }
+
+            @media @mobileTab {
+                // margin-bottom: 40px;
+                text-align: center;
+            }
         }       
     }    
 }
@@ -81,11 +121,19 @@ section.about-section{
     background: #14191B;
     margin-top: 0;
     padding: 97px 0 236px 0;
+
+    @media @mobileTab{
+        margin-top: -50px;
+    }
     
     .container{
 
         .content-wrapper{
             padding: 0 113px;
+
+            @media @mobileTab {
+                padding: 0 50px;
+            }
             
             h6{
                 color: #767B7D;
@@ -104,7 +152,7 @@ section.about-section{
                 
                 font-size: 16px;
                 font-weight: 600;
-                line-height: 0px;
+                // line-height: 0px;
             }
 
             h2{
@@ -168,7 +216,23 @@ section.approach-section{
         .col-lg-6{
             margin: -176px 0 0 0;
             height: 775px;
-            object-fit: cover;          
+            object-fit: cover; 
+
+            @media @mobileTab {
+                    // margin: -249px 0 -122px 0;
+                    height: 765px;
+                    object-fit: cover;
+            }
+            
+            .approach-img{
+
+                @media @mobileTab {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+                
+            }
         }
 
         .squre-shape{
@@ -177,6 +241,13 @@ section.approach-section{
             width: 100%px;
             background-color: #ffffff;
             margin: -74px 0 0 0; 
+
+            @media @mobileTab {
+                text-align: center;
+                padding-bottom: 50px;
+                
+            }
+
             
             h2{               
                 font-size: 34px;
@@ -184,6 +255,10 @@ section.approach-section{
                 text-transform: uppercase;
                 text-align: left;
                 font-weight: 600;
+
+                @media @mobileTab {
+                    text-align: center;
+                }
             }
 
             h6{
@@ -208,35 +283,42 @@ section.approach-section{
             }
 
             div{
-               .link-btn{
-                color: #000000;
-                text-align: center;
-               } 
-            }
-            .link-btn{
-                color: #000000;
-                text-align: center;
-                font-size: 15px;
-                font-family: Josefin Sans;
-                font-style: normal;
-                font-weight: 600;
-                line-height: normal;
-                text-transform: uppercase;
-                margin-top: 30px;
-                margin-bottom: 30px;
-    
-                a{
-                    display: flex;
-                    align-items: center;
-                    justify-content: left;
-                                  
-                    img{
-                        margin-right: 10px;
-                        height: 100%;
-                                           
+                .link-btn{
+                    color: #000000;
+                    text-align: center;
+                    font-size: 15px;
+                    font-family: Josefin Sans;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    text-transform: uppercase;
+                    margin-top: 30px;
+                    margin-bottom: 30px;
+        
+                    a{
+                        display: flex;
+                        align-items: center;
+                        justify-content: left;
+
+                        @media @mobileTab {
+                            display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        }
+                                      
+                        img{
+                            margin-right: 10px;
+                            height: 100%;
+                                               
+                        }
                     }
                 }
+
+                @media @mobileTab {
+                    padding-bottom: 50px;
+                }
             }
+            
         }
     }
 }
@@ -245,6 +327,11 @@ section.services-section{
     margin-top: 30px;
     background: #000000;
     padding-top: 88px;
+
+    @media @mobileTab {
+        padding-top: 50px;
+        margin-top: 225px;
+    }
 
         .content-wrapper{
 
@@ -257,7 +344,17 @@ section.services-section{
                 width: 427px;
                 object-fit: cover;
                 margin-top: 30px;
-              
+
+
+                @media @mobileTab {              
+                    margin-top: 30px;
+                    display: flex;
+                    width: 100%;
+                    height: auto;
+                    justify-content: center;
+                    object-fit: cover;
+
+                }
             }
 
             .team-img-description{
@@ -346,11 +443,21 @@ section.contact-section{
     .col-lg-6{
         width: 55%;
         padding: 200px 0;
+
+        @media @mobileTab {
+            width: 100%;
+            text-align: center;
+        }
     }
     .content-wrapper{
         position: relative;
-        text-align: left;
+        // text-align: left;
         z-index: 5;
+
+        @media @mobileTab {
+            text-align: center;
+            padding: 0 10px;
+        }
 
         h6{
             color: #767B7D;
@@ -361,6 +468,10 @@ section.contact-section{
             text-align: left;
             line-height: 124%;
             text-transform: uppercase;
+
+            @media @mobileTab {
+                text-align: center;
+            }
         }
 
         h2{
@@ -374,6 +485,10 @@ section.contact-section{
             span{
                 color: #BD08FA;
             }
+
+            @media @mobileTab {
+                text-align: center;
+            }
         }
 
         p{
@@ -383,6 +498,10 @@ section.contact-section{
             font-weight: 500;
             line-height: 169.5%;
             text-transform: capitalize;
+
+            @media @mobileTab {
+                text-align: center;
+            }
         }  
         
         .link-btn{
@@ -409,7 +528,10 @@ section.contact-section{
                
                 }
             }
-    
+            @media @mobileTab {
+                display: flex;
+                justify-content: center;
+            }
         }  
     }
 }
@@ -448,6 +570,12 @@ section.location-section{
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
 
+        @media @mobileTab {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            background: #000;
+        }
+
         .location-image{
             position: relative;
             padding-top: 100%;
@@ -462,6 +590,14 @@ section.location-section{
                 width: 100%;
                 object-fit: cover;
                 z-index: 5;
+
+                @media @mobileTab {
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
+                }
             }
             .content-wrappr{
                 position: relative;
@@ -581,6 +717,12 @@ section.galary-section{
    .galary-wrapper{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+
+    @media @mobileTab {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        // background: #000;
+    }
 
         .galary-image{
             position: relative;

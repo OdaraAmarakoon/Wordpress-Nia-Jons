@@ -23,6 +23,29 @@
 						</a>
 					<?php endif; ?>
 				</div>
+
+				<div class="mobile-nav">
+						<a href="#menu" class="menu"><i class="fa-solid fa-bars"></i></a>
+						<div class="menu-wrapper">
+							<nav id="menu">
+								<div id="navbarCollapse">
+									<?php
+									$defaults = array(
+										'menu'            => 'Mobile Menu',
+										'container'       => false,
+										'menu_class'      => 'menu',
+										'echo'            => true,
+										'fallback_cb'     => '',
+										'items_wrap'      => '<ul id="%1$s" class="%2$s navbar-nav">%3$s</ul>',
+										'depth'           => 0
+									);
+									wp_nav_menu($defaults);
+									?>
+								</div>
+							</nav>
+						</div>
+					</div>
+
 				<div class="right">
 					<div class="menu-wrapper">
 						<nav class="navbar navbar-expand-md p-0" id="menu">
@@ -45,6 +68,16 @@
 					<?php if ($link = get_field('schedule_link', 'option')) : ?>
 						<a href="<?php echo $link['url']; ?>" class="theme-btn call-link"><?php echo $link['title']; ?></a>
 					<?php endif; ?>
+					
+					
 				</div>
 			</div>
+	
+			<div class="sec-menu">
+				<div class="container">
+				<?php if ($link = get_field('schedule_link', 'option')) : ?>
+						<a href="<?php echo $link['url']; ?>" class="theme-btn2 call-link"><?php echo $link['title']; ?></a>
+					<?php endif; ?>
+				</div>
+			</div>	
 		</header>
