@@ -16,11 +16,11 @@ jQuery(document).ready(function ($) {
 
 	new Swiper('#approachSwiper', {
 		loop: true,
-		autoplay: {
-			delay: 5000,
-			disableOnInteraction: false
-		},
-		slidesPerView: 3,
+			// autoplay: {
+			// 	delay: 5000,
+			// 	disableOnInteraction: false
+			// },
+		slidesPerView: 1,
 		speed: 500,
 		preventClicksPropagation: false,
 	});

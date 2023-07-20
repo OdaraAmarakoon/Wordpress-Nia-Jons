@@ -32,7 +32,6 @@
                 <a href="#"><?php getImage(get_field('arrow_aboutus')); ?><?php the_field('arrow_text_about'); ?></a>
             </div>
         </div>
-
     </section>
 <?php endif; ?>
 
@@ -42,11 +41,10 @@
     <section class="approach-section" id="welcome">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 approach-img">
-                 
-                    <?php getImage(get_field('approach_image')); ?>
-
-                    
+                <div class="col-lg-6">
+                    <div class="approach-img">
+                    <?php getImage(get_field('approach_image')); ?> 
+                    </div>           
                 </div>
                 <div class="col-lg-6">
                     <div class="squre-shape">
@@ -61,8 +59,17 @@
                             <div class="swiper-wrapper">
                                 <?php while (have_rows('approach_swiper')) : the_row(); ?>
                                     <div class="swiper-slide">
-                                      
+                                    <div class="card-stars">
+                                        <i class="fa-sharp fa-solid fa-star"></i>
+                                        <i class="fa-sharp fa-solid fa-star"></i>
+                                        <i class="fa-sharp fa-solid fa-star"></i>
+                                        <i class="fa-sharp fa-solid fa-star"></i>
+                                        <i class="fa-sharp fa-solid fa-star"></i>
+                                    </div>
+                                    <div>
                                     
+                                    </div>
+                                        <h6 class="testimonial-name"><?php the_sub_field('swiper_content'); ?></h6>
                                         <p class="testimonial-name"><?php the_sub_field('author_name'); ?></p>
                                     </div>
                                 <?php endwhile; ?>
@@ -193,8 +200,6 @@
         </div>
     </section>
 <?php endif; ?>
-
-
 
 
 <?php get_footer(); ?>

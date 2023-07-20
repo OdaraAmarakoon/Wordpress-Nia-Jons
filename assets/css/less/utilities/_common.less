@@ -527,8 +527,57 @@ h2{
     font-size: 34px;
     margin-bottom: 20px;
     text-transform: uppercase;
-    font-weight: 600;
-    
+    font-weight: 600;   
+}
+
+section.subpage-banner-section {
+    position: relative;
+    width: 100%;
+    height: 90% ;
+    margin-top: 0px;
+    padding: 200px 0 200px 0;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to top, #000000 10%, #000000 100%);
+    }
+
+    @media @mobileTab {
+        text-align: center;
+        background: #14191B;
+        padding: 199px 0 150px 0; 
+    }
+
+    .full-image {
+        mix-blend-mode: luminosity;
+        opacity: 0.1;
+
+        @media @mobileTab {
+            position: initial;
+            width: 100%;
+        }
+    }
+
+    .content-wrapper{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        z-index: 5;
+        
+        h1{
+            color: #fff;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            text-transform: uppercase;
+
+        }
+    }     
 }
 
 .link-btn{
@@ -543,14 +592,10 @@ h2{
     a{
         display: flex;
         align-items: center;
-        
-                      
+                        
         img{
             margin-right: 10px;
             height: 100%;
-            
-       
         }
     }
-
 }  

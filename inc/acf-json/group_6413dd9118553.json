@@ -294,56 +294,6 @@
             "append": ""
         },
         {
-            "key": "field_64a5fa4efcf0b",
-            "label": "rating",
-            "name": "rating",
-            "aria-label": "",
-            "type": "repeater",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "layout": "table",
-            "pagination": 0,
-            "min": 0,
-            "max": 0,
-            "collapsed": "",
-            "button_label": "Add Row",
-            "rows_per_page": 20,
-            "sub_fields": [
-                {
-                    "key": "field_64a5fa6efcf0c",
-                    "label": "star-rating",
-                    "name": "star-rating",
-                    "aria-label": "",
-                    "type": "image",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "return_format": "id",
-                    "library": "all",
-                    "min_width": "",
-                    "min_height": "",
-                    "min_size": "",
-                    "max_width": "",
-                    "max_height": "",
-                    "max_size": "",
-                    "mime_types": "",
-                    "preview_size": "medium",
-                    "parent_repeater": "field_64a5fa4efcf0b"
-                }
-            ]
-        },
-        {
             "key": "field_64a39d9df27a0",
             "label": "Approach swiper",
             "name": "approach_swiper",
@@ -1063,5 +1013,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1688810993
+    "modified": 1689657964
 }

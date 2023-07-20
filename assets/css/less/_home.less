@@ -20,20 +20,8 @@ section.banner-section {
         @media @mobileTab {
             position: initial;
             width: 100%;
-            // padding: 0 50px 0 0;
-            // opacity: 20%;
         }
       }
-    
-    //   &::before {
-    //     content: "";
-    //     position: absolute;
-    //     left: 0;
-    //     top: 0;
-    //     width: 100%;
-    //     height: 100%;
-    //     background: linear-gradient(to top, #292929 20%, #000000 100%);
-    // }
 
     .container {
         position: relative;
@@ -110,7 +98,6 @@ section.banner-section {
             }
 
             @media @mobileTab {
-                // margin-bottom: 40px;
                 text-align: center;
             }
         }       
@@ -152,13 +139,10 @@ section.about-section{
                 
                 font-size: 16px;
                 font-weight: 600;
-                // line-height: 0px;
             }
 
             h2{
                 color: #767B7D;
-                
-
             }
 
             p{
@@ -171,11 +155,6 @@ section.about-section{
                 font-weight: 600;
                 line-height: 175%;
                 text-transform: capitalize;
-
-                span{
-                    text-decoration-line: underline;
-
-                }
             }        
         }
         .link-btn{
@@ -214,17 +193,11 @@ section.approach-section{
             }
         }
         .col-lg-6{
-            margin: -176px 0 0 0;
-            height: 775px;
-            object-fit: cover; 
 
-            @media @mobileTab {
-                    // margin: -249px 0 -122px 0;
-                    height: 765px;
-                    object-fit: cover;
-            }
-            
             .approach-img{
+                margin: -176px 0 0;
+                height: 760px;
+                object-fit: cover; 
 
                 @media @mobileTab {
                     width: 100%;
@@ -236,22 +209,20 @@ section.approach-section{
         }
 
         .squre-shape{
-            padding: 91px 52px 10px 52px;
+            padding: 80px 67px 10px 67px;
             height: 700px;
-            width: 100%px;
-            background-color: #ffffff;
-            margin: -74px 0 0 0; 
+            width: 600px;
+            background-color: #fff;
+            margin: -258px 0 0 0;
 
             @media @mobileTab {
                 text-align: center;
-                padding-bottom: 50px;
-                
+                padding-bottom: 50px;    
             }
-
             
             h2{               
-                font-size: 34px;
-                margin-bottom: 20px;
+                font-size: 32px;
+                margin:8px -57px 20px 0;
                 text-transform: uppercase;
                 text-align: left;
                 font-weight: 600;
@@ -262,7 +233,6 @@ section.approach-section{
             }
 
             h6{
-
                 color: #767B7D;
                 font-size: 16px;
                 font-family: Poppins;
@@ -270,6 +240,7 @@ section.approach-section{
                 font-weight: 600;
                 line-height: 124%;
                 text-transform: uppercase;
+                text-align: left;
             }
 
             p{
@@ -308,14 +279,41 @@ section.approach-section{
                                       
                         img{
                             margin-right: 10px;
-                            height: 100%;
-                                               
+                            height: 100%;                                              
                         }
                     }
                 }
 
                 @media @mobileTab {
                     padding-bottom: 50px;
+                }
+            }
+
+            .swiper-wrapper{
+
+                i{
+                    color: #BD08FA;
+                }
+                h6{
+                    color: #525657;
+                    font-family: Open Sans;
+                    font-size: 18px;
+                    // font-style: italic;
+                    font-weight: 400;
+                    line-height: 150%; /* 30px */
+                    text-transform: capitalize;
+                    text-align: left;
+                }
+
+                p{
+                    color: #525657;
+                    font-family: Philosopher;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    text-transform: lowercase;
+                    padding-top: 7px;
                 }
             }
             
@@ -345,7 +343,6 @@ section.services-section{
                 object-fit: cover;
                 margin-top: 30px;
 
-
                 @media @mobileTab {              
                     margin-top: 30px;
                     display: flex;
@@ -353,7 +350,6 @@ section.services-section{
                     height: auto;
                     justify-content: center;
                     object-fit: cover;
-
                 }
             }
 
@@ -388,11 +384,7 @@ section.services-section{
                 text-transform: uppercase;
                 text-align: center;
                 font-weight: 600;
-                
-
-                span{
-                    color: #BD08FA;
-                }
+            
             }
 
             .link-btn{
